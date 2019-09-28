@@ -1,4 +1,4 @@
-/Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/emedea/projects/ft_ls_c
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/kagestonedragon/my_ft_ls
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/emedea/projects/ft_ls_c/cmake-build-debug
+-- Build files have been written to: /Users/kagestonedragon/my_ft_ls/cmake-build-debug

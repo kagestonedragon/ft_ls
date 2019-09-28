@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="my_ft_ls"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/kagestonedragon/my_ft_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/kagestonedragon/my_ft_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/kagestonedragon/my_ft_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_ft_ls">
+				<Option output="/Users/kagestonedragon/my_ft_ls/cmake-build-debug/my_ft_ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kagestonedragon/my_ft_ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kagestonedragon/my_ft_ls/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_ft_ls"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_ft_ls/fast">
+				<Option output="/Users/kagestonedragon/my_ft_ls/cmake-build-debug/my_ft_ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kagestonedragon/my_ft_ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/kagestonedragon/my_ft_ls/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_ft_ls/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/kagestonedragon/my_ft_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/includes/ft_ls.h">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/free/free.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/log/ls_log.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/main.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/miscellaneous/ft_strchr_index.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/miscellaneous/get_fpath.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/miscellaneous/get_integer_length.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/miscellaneous/get_max_name.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/miscellaneous/sorting.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/parsing/parsing_directory.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/parsing/parsing_entry.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/parsing/parsing_input.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/parsing/parsing_options.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_blocks.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_fname.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_group_name.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_link.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_protection.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_size.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_time.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/detailed_item/put_user_name.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/get_grid.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/put.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/put_detailed_list.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/put_input_name.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/sources/put/put_list.c">
+			<Option target="my_ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/kagestonedragon/my_ft_ls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -50,54 +50,54 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/emedea/projects/ft_ls_c
+CMAKE_SOURCE_DIR = /Users/kagestonedragon/my_ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/emedea/projects/ft_ls_c/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/kagestonedragon/my_ft_ls/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ft_ls_c.dir
+# Target rules for target CMakeFiles/my_ft_ls.dir
 
 # All Build rule for target.
-CMakeFiles/ft_ls_c.dir/all:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/depend
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target ft_ls_c"
-.PHONY : CMakeFiles/ft_ls_c.dir/all
+CMakeFiles/my_ft_ls.dir/all:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/depend
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target my_ft_ls"
+.PHONY : CMakeFiles/my_ft_ls.dir/all
 
 # Include target in all.
-all: CMakeFiles/ft_ls_c.dir/all
+all: CMakeFiles/my_ft_ls.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ft_ls_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ft_ls_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ft_ls_c.dir/rule
+CMakeFiles/my_ft_ls.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my_ft_ls.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/my_ft_ls.dir/rule
 
 # Convenience name for target.
-ft_ls_c: CMakeFiles/ft_ls_c.dir/rule
+my_ft_ls: CMakeFiles/my_ft_ls.dir/rule
 
-.PHONY : ft_ls_c
-
-# clean rule for target.
-CMakeFiles/ft_ls_c.dir/clean:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/clean
-.PHONY : CMakeFiles/ft_ls_c.dir/clean
+.PHONY : my_ft_ls
 
 # clean rule for target.
-clean: CMakeFiles/ft_ls_c.dir/clean
+CMakeFiles/my_ft_ls.dir/clean:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/clean
+.PHONY : CMakeFiles/my_ft_ls.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/my_ft_ls.dir/clean
 
 .PHONY : clean
 

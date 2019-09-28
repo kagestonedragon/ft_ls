@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/emedea/projects/ft_ls_c
+CMAKE_SOURCE_DIR = /Users/kagestonedragon/my_ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/emedea/projects/ft_ls_c/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/kagestonedragon/my_ft_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/emedea/projects/ft_ls_c/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/emedea/Programs/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles /Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles /Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emedea/projects/ft_ls_c/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,98 +111,692 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ft_ls_c
+# Target rules for targets named my_ft_ls
 
 # Build rule for target.
-ft_ls_c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ft_ls_c
-.PHONY : ft_ls_c
+my_ft_ls: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_ft_ls
+.PHONY : my_ft_ls
 
 # fast build rule for target.
-ft_ls_c/fast:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/build
-.PHONY : ft_ls_c/fast
+my_ft_ls/fast:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/build
+.PHONY : my_ft_ls/fast
 
-tt/main.o: tt/main.c.o
+sources/free/free.o: sources/free/free.c.o
 
-.PHONY : tt/main.o
-
-# target to build an object file
-tt/main.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/main.c.o
-.PHONY : tt/main.c.o
-
-tt/main.i: tt/main.c.i
-
-.PHONY : tt/main.i
-
-# target to preprocess a source file
-tt/main.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/main.c.i
-.PHONY : tt/main.c.i
-
-tt/main.s: tt/main.c.s
-
-.PHONY : tt/main.s
-
-# target to generate assembly for a file
-tt/main.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/main.c.s
-.PHONY : tt/main.c.s
-
-tt/reading_directories.o: tt/reading_directories.c.o
-
-.PHONY : tt/reading_directories.o
+.PHONY : sources/free/free.o
 
 # target to build an object file
-tt/reading_directories.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/reading_directories.c.o
-.PHONY : tt/reading_directories.c.o
+sources/free/free.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/free/free.c.o
+.PHONY : sources/free/free.c.o
 
-tt/reading_directories.i: tt/reading_directories.c.i
+sources/free/free.i: sources/free/free.c.i
 
-.PHONY : tt/reading_directories.i
+.PHONY : sources/free/free.i
 
 # target to preprocess a source file
-tt/reading_directories.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/reading_directories.c.i
-.PHONY : tt/reading_directories.c.i
+sources/free/free.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/free/free.c.i
+.PHONY : sources/free/free.c.i
 
-tt/reading_directories.s: tt/reading_directories.c.s
+sources/free/free.s: sources/free/free.c.s
 
-.PHONY : tt/reading_directories.s
+.PHONY : sources/free/free.s
 
 # target to generate assembly for a file
-tt/reading_directories.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/reading_directories.c.s
-.PHONY : tt/reading_directories.c.s
+sources/free/free.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/free/free.c.s
+.PHONY : sources/free/free.c.s
 
-tt/sorting.o: tt/sorting.c.o
+sources/log/ls_log.o: sources/log/ls_log.c.o
 
-.PHONY : tt/sorting.o
+.PHONY : sources/log/ls_log.o
 
 # target to build an object file
-tt/sorting.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/sorting.c.o
-.PHONY : tt/sorting.c.o
+sources/log/ls_log.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/log/ls_log.c.o
+.PHONY : sources/log/ls_log.c.o
 
-tt/sorting.i: tt/sorting.c.i
+sources/log/ls_log.i: sources/log/ls_log.c.i
 
-.PHONY : tt/sorting.i
+.PHONY : sources/log/ls_log.i
 
 # target to preprocess a source file
-tt/sorting.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/sorting.c.i
-.PHONY : tt/sorting.c.i
+sources/log/ls_log.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/log/ls_log.c.i
+.PHONY : sources/log/ls_log.c.i
 
-tt/sorting.s: tt/sorting.c.s
+sources/log/ls_log.s: sources/log/ls_log.c.s
 
-.PHONY : tt/sorting.s
+.PHONY : sources/log/ls_log.s
 
 # target to generate assembly for a file
-tt/sorting.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls_c.dir/build.make CMakeFiles/ft_ls_c.dir/tt/sorting.c.s
-.PHONY : tt/sorting.c.s
+sources/log/ls_log.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/log/ls_log.c.s
+.PHONY : sources/log/ls_log.c.s
+
+sources/main.o: sources/main.c.o
+
+.PHONY : sources/main.o
+
+# target to build an object file
+sources/main.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/main.c.o
+.PHONY : sources/main.c.o
+
+sources/main.i: sources/main.c.i
+
+.PHONY : sources/main.i
+
+# target to preprocess a source file
+sources/main.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/main.c.i
+.PHONY : sources/main.c.i
+
+sources/main.s: sources/main.c.s
+
+.PHONY : sources/main.s
+
+# target to generate assembly for a file
+sources/main.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/main.c.s
+.PHONY : sources/main.c.s
+
+sources/miscellaneous/ft_strchr_index.o: sources/miscellaneous/ft_strchr_index.c.o
+
+.PHONY : sources/miscellaneous/ft_strchr_index.o
+
+# target to build an object file
+sources/miscellaneous/ft_strchr_index.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/ft_strchr_index.c.o
+.PHONY : sources/miscellaneous/ft_strchr_index.c.o
+
+sources/miscellaneous/ft_strchr_index.i: sources/miscellaneous/ft_strchr_index.c.i
+
+.PHONY : sources/miscellaneous/ft_strchr_index.i
+
+# target to preprocess a source file
+sources/miscellaneous/ft_strchr_index.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/ft_strchr_index.c.i
+.PHONY : sources/miscellaneous/ft_strchr_index.c.i
+
+sources/miscellaneous/ft_strchr_index.s: sources/miscellaneous/ft_strchr_index.c.s
+
+.PHONY : sources/miscellaneous/ft_strchr_index.s
+
+# target to generate assembly for a file
+sources/miscellaneous/ft_strchr_index.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/ft_strchr_index.c.s
+.PHONY : sources/miscellaneous/ft_strchr_index.c.s
+
+sources/miscellaneous/get_fpath.o: sources/miscellaneous/get_fpath.c.o
+
+.PHONY : sources/miscellaneous/get_fpath.o
+
+# target to build an object file
+sources/miscellaneous/get_fpath.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_fpath.c.o
+.PHONY : sources/miscellaneous/get_fpath.c.o
+
+sources/miscellaneous/get_fpath.i: sources/miscellaneous/get_fpath.c.i
+
+.PHONY : sources/miscellaneous/get_fpath.i
+
+# target to preprocess a source file
+sources/miscellaneous/get_fpath.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_fpath.c.i
+.PHONY : sources/miscellaneous/get_fpath.c.i
+
+sources/miscellaneous/get_fpath.s: sources/miscellaneous/get_fpath.c.s
+
+.PHONY : sources/miscellaneous/get_fpath.s
+
+# target to generate assembly for a file
+sources/miscellaneous/get_fpath.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_fpath.c.s
+.PHONY : sources/miscellaneous/get_fpath.c.s
+
+sources/miscellaneous/get_integer_length.o: sources/miscellaneous/get_integer_length.c.o
+
+.PHONY : sources/miscellaneous/get_integer_length.o
+
+# target to build an object file
+sources/miscellaneous/get_integer_length.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_integer_length.c.o
+.PHONY : sources/miscellaneous/get_integer_length.c.o
+
+sources/miscellaneous/get_integer_length.i: sources/miscellaneous/get_integer_length.c.i
+
+.PHONY : sources/miscellaneous/get_integer_length.i
+
+# target to preprocess a source file
+sources/miscellaneous/get_integer_length.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_integer_length.c.i
+.PHONY : sources/miscellaneous/get_integer_length.c.i
+
+sources/miscellaneous/get_integer_length.s: sources/miscellaneous/get_integer_length.c.s
+
+.PHONY : sources/miscellaneous/get_integer_length.s
+
+# target to generate assembly for a file
+sources/miscellaneous/get_integer_length.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_integer_length.c.s
+.PHONY : sources/miscellaneous/get_integer_length.c.s
+
+sources/miscellaneous/get_max_name.o: sources/miscellaneous/get_max_name.c.o
+
+.PHONY : sources/miscellaneous/get_max_name.o
+
+# target to build an object file
+sources/miscellaneous/get_max_name.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_max_name.c.o
+.PHONY : sources/miscellaneous/get_max_name.c.o
+
+sources/miscellaneous/get_max_name.i: sources/miscellaneous/get_max_name.c.i
+
+.PHONY : sources/miscellaneous/get_max_name.i
+
+# target to preprocess a source file
+sources/miscellaneous/get_max_name.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_max_name.c.i
+.PHONY : sources/miscellaneous/get_max_name.c.i
+
+sources/miscellaneous/get_max_name.s: sources/miscellaneous/get_max_name.c.s
+
+.PHONY : sources/miscellaneous/get_max_name.s
+
+# target to generate assembly for a file
+sources/miscellaneous/get_max_name.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/get_max_name.c.s
+.PHONY : sources/miscellaneous/get_max_name.c.s
+
+sources/miscellaneous/sorting.o: sources/miscellaneous/sorting.c.o
+
+.PHONY : sources/miscellaneous/sorting.o
+
+# target to build an object file
+sources/miscellaneous/sorting.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/sorting.c.o
+.PHONY : sources/miscellaneous/sorting.c.o
+
+sources/miscellaneous/sorting.i: sources/miscellaneous/sorting.c.i
+
+.PHONY : sources/miscellaneous/sorting.i
+
+# target to preprocess a source file
+sources/miscellaneous/sorting.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/sorting.c.i
+.PHONY : sources/miscellaneous/sorting.c.i
+
+sources/miscellaneous/sorting.s: sources/miscellaneous/sorting.c.s
+
+.PHONY : sources/miscellaneous/sorting.s
+
+# target to generate assembly for a file
+sources/miscellaneous/sorting.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/miscellaneous/sorting.c.s
+.PHONY : sources/miscellaneous/sorting.c.s
+
+sources/parsing/parsing_directory.o: sources/parsing/parsing_directory.c.o
+
+.PHONY : sources/parsing/parsing_directory.o
+
+# target to build an object file
+sources/parsing/parsing_directory.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_directory.c.o
+.PHONY : sources/parsing/parsing_directory.c.o
+
+sources/parsing/parsing_directory.i: sources/parsing/parsing_directory.c.i
+
+.PHONY : sources/parsing/parsing_directory.i
+
+# target to preprocess a source file
+sources/parsing/parsing_directory.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_directory.c.i
+.PHONY : sources/parsing/parsing_directory.c.i
+
+sources/parsing/parsing_directory.s: sources/parsing/parsing_directory.c.s
+
+.PHONY : sources/parsing/parsing_directory.s
+
+# target to generate assembly for a file
+sources/parsing/parsing_directory.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_directory.c.s
+.PHONY : sources/parsing/parsing_directory.c.s
+
+sources/parsing/parsing_entry.o: sources/parsing/parsing_entry.c.o
+
+.PHONY : sources/parsing/parsing_entry.o
+
+# target to build an object file
+sources/parsing/parsing_entry.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_entry.c.o
+.PHONY : sources/parsing/parsing_entry.c.o
+
+sources/parsing/parsing_entry.i: sources/parsing/parsing_entry.c.i
+
+.PHONY : sources/parsing/parsing_entry.i
+
+# target to preprocess a source file
+sources/parsing/parsing_entry.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_entry.c.i
+.PHONY : sources/parsing/parsing_entry.c.i
+
+sources/parsing/parsing_entry.s: sources/parsing/parsing_entry.c.s
+
+.PHONY : sources/parsing/parsing_entry.s
+
+# target to generate assembly for a file
+sources/parsing/parsing_entry.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_entry.c.s
+.PHONY : sources/parsing/parsing_entry.c.s
+
+sources/parsing/parsing_input.o: sources/parsing/parsing_input.c.o
+
+.PHONY : sources/parsing/parsing_input.o
+
+# target to build an object file
+sources/parsing/parsing_input.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_input.c.o
+.PHONY : sources/parsing/parsing_input.c.o
+
+sources/parsing/parsing_input.i: sources/parsing/parsing_input.c.i
+
+.PHONY : sources/parsing/parsing_input.i
+
+# target to preprocess a source file
+sources/parsing/parsing_input.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_input.c.i
+.PHONY : sources/parsing/parsing_input.c.i
+
+sources/parsing/parsing_input.s: sources/parsing/parsing_input.c.s
+
+.PHONY : sources/parsing/parsing_input.s
+
+# target to generate assembly for a file
+sources/parsing/parsing_input.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_input.c.s
+.PHONY : sources/parsing/parsing_input.c.s
+
+sources/parsing/parsing_options.o: sources/parsing/parsing_options.c.o
+
+.PHONY : sources/parsing/parsing_options.o
+
+# target to build an object file
+sources/parsing/parsing_options.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_options.c.o
+.PHONY : sources/parsing/parsing_options.c.o
+
+sources/parsing/parsing_options.i: sources/parsing/parsing_options.c.i
+
+.PHONY : sources/parsing/parsing_options.i
+
+# target to preprocess a source file
+sources/parsing/parsing_options.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_options.c.i
+.PHONY : sources/parsing/parsing_options.c.i
+
+sources/parsing/parsing_options.s: sources/parsing/parsing_options.c.s
+
+.PHONY : sources/parsing/parsing_options.s
+
+# target to generate assembly for a file
+sources/parsing/parsing_options.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/parsing/parsing_options.c.s
+.PHONY : sources/parsing/parsing_options.c.s
+
+sources/put/detailed_item/put_blocks.o: sources/put/detailed_item/put_blocks.c.o
+
+.PHONY : sources/put/detailed_item/put_blocks.o
+
+# target to build an object file
+sources/put/detailed_item/put_blocks.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_blocks.c.o
+.PHONY : sources/put/detailed_item/put_blocks.c.o
+
+sources/put/detailed_item/put_blocks.i: sources/put/detailed_item/put_blocks.c.i
+
+.PHONY : sources/put/detailed_item/put_blocks.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_blocks.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_blocks.c.i
+.PHONY : sources/put/detailed_item/put_blocks.c.i
+
+sources/put/detailed_item/put_blocks.s: sources/put/detailed_item/put_blocks.c.s
+
+.PHONY : sources/put/detailed_item/put_blocks.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_blocks.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_blocks.c.s
+.PHONY : sources/put/detailed_item/put_blocks.c.s
+
+sources/put/detailed_item/put_fname.o: sources/put/detailed_item/put_fname.c.o
+
+.PHONY : sources/put/detailed_item/put_fname.o
+
+# target to build an object file
+sources/put/detailed_item/put_fname.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_fname.c.o
+.PHONY : sources/put/detailed_item/put_fname.c.o
+
+sources/put/detailed_item/put_fname.i: sources/put/detailed_item/put_fname.c.i
+
+.PHONY : sources/put/detailed_item/put_fname.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_fname.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_fname.c.i
+.PHONY : sources/put/detailed_item/put_fname.c.i
+
+sources/put/detailed_item/put_fname.s: sources/put/detailed_item/put_fname.c.s
+
+.PHONY : sources/put/detailed_item/put_fname.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_fname.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_fname.c.s
+.PHONY : sources/put/detailed_item/put_fname.c.s
+
+sources/put/detailed_item/put_group_name.o: sources/put/detailed_item/put_group_name.c.o
+
+.PHONY : sources/put/detailed_item/put_group_name.o
+
+# target to build an object file
+sources/put/detailed_item/put_group_name.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_group_name.c.o
+.PHONY : sources/put/detailed_item/put_group_name.c.o
+
+sources/put/detailed_item/put_group_name.i: sources/put/detailed_item/put_group_name.c.i
+
+.PHONY : sources/put/detailed_item/put_group_name.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_group_name.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_group_name.c.i
+.PHONY : sources/put/detailed_item/put_group_name.c.i
+
+sources/put/detailed_item/put_group_name.s: sources/put/detailed_item/put_group_name.c.s
+
+.PHONY : sources/put/detailed_item/put_group_name.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_group_name.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_group_name.c.s
+.PHONY : sources/put/detailed_item/put_group_name.c.s
+
+sources/put/detailed_item/put_link.o: sources/put/detailed_item/put_link.c.o
+
+.PHONY : sources/put/detailed_item/put_link.o
+
+# target to build an object file
+sources/put/detailed_item/put_link.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_link.c.o
+.PHONY : sources/put/detailed_item/put_link.c.o
+
+sources/put/detailed_item/put_link.i: sources/put/detailed_item/put_link.c.i
+
+.PHONY : sources/put/detailed_item/put_link.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_link.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_link.c.i
+.PHONY : sources/put/detailed_item/put_link.c.i
+
+sources/put/detailed_item/put_link.s: sources/put/detailed_item/put_link.c.s
+
+.PHONY : sources/put/detailed_item/put_link.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_link.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_link.c.s
+.PHONY : sources/put/detailed_item/put_link.c.s
+
+sources/put/detailed_item/put_protection.o: sources/put/detailed_item/put_protection.c.o
+
+.PHONY : sources/put/detailed_item/put_protection.o
+
+# target to build an object file
+sources/put/detailed_item/put_protection.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_protection.c.o
+.PHONY : sources/put/detailed_item/put_protection.c.o
+
+sources/put/detailed_item/put_protection.i: sources/put/detailed_item/put_protection.c.i
+
+.PHONY : sources/put/detailed_item/put_protection.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_protection.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_protection.c.i
+.PHONY : sources/put/detailed_item/put_protection.c.i
+
+sources/put/detailed_item/put_protection.s: sources/put/detailed_item/put_protection.c.s
+
+.PHONY : sources/put/detailed_item/put_protection.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_protection.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_protection.c.s
+.PHONY : sources/put/detailed_item/put_protection.c.s
+
+sources/put/detailed_item/put_size.o: sources/put/detailed_item/put_size.c.o
+
+.PHONY : sources/put/detailed_item/put_size.o
+
+# target to build an object file
+sources/put/detailed_item/put_size.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_size.c.o
+.PHONY : sources/put/detailed_item/put_size.c.o
+
+sources/put/detailed_item/put_size.i: sources/put/detailed_item/put_size.c.i
+
+.PHONY : sources/put/detailed_item/put_size.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_size.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_size.c.i
+.PHONY : sources/put/detailed_item/put_size.c.i
+
+sources/put/detailed_item/put_size.s: sources/put/detailed_item/put_size.c.s
+
+.PHONY : sources/put/detailed_item/put_size.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_size.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_size.c.s
+.PHONY : sources/put/detailed_item/put_size.c.s
+
+sources/put/detailed_item/put_time.o: sources/put/detailed_item/put_time.c.o
+
+.PHONY : sources/put/detailed_item/put_time.o
+
+# target to build an object file
+sources/put/detailed_item/put_time.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_time.c.o
+.PHONY : sources/put/detailed_item/put_time.c.o
+
+sources/put/detailed_item/put_time.i: sources/put/detailed_item/put_time.c.i
+
+.PHONY : sources/put/detailed_item/put_time.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_time.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_time.c.i
+.PHONY : sources/put/detailed_item/put_time.c.i
+
+sources/put/detailed_item/put_time.s: sources/put/detailed_item/put_time.c.s
+
+.PHONY : sources/put/detailed_item/put_time.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_time.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_time.c.s
+.PHONY : sources/put/detailed_item/put_time.c.s
+
+sources/put/detailed_item/put_user_name.o: sources/put/detailed_item/put_user_name.c.o
+
+.PHONY : sources/put/detailed_item/put_user_name.o
+
+# target to build an object file
+sources/put/detailed_item/put_user_name.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_user_name.c.o
+.PHONY : sources/put/detailed_item/put_user_name.c.o
+
+sources/put/detailed_item/put_user_name.i: sources/put/detailed_item/put_user_name.c.i
+
+.PHONY : sources/put/detailed_item/put_user_name.i
+
+# target to preprocess a source file
+sources/put/detailed_item/put_user_name.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_user_name.c.i
+.PHONY : sources/put/detailed_item/put_user_name.c.i
+
+sources/put/detailed_item/put_user_name.s: sources/put/detailed_item/put_user_name.c.s
+
+.PHONY : sources/put/detailed_item/put_user_name.s
+
+# target to generate assembly for a file
+sources/put/detailed_item/put_user_name.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/detailed_item/put_user_name.c.s
+.PHONY : sources/put/detailed_item/put_user_name.c.s
+
+sources/put/get_grid.o: sources/put/get_grid.c.o
+
+.PHONY : sources/put/get_grid.o
+
+# target to build an object file
+sources/put/get_grid.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/get_grid.c.o
+.PHONY : sources/put/get_grid.c.o
+
+sources/put/get_grid.i: sources/put/get_grid.c.i
+
+.PHONY : sources/put/get_grid.i
+
+# target to preprocess a source file
+sources/put/get_grid.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/get_grid.c.i
+.PHONY : sources/put/get_grid.c.i
+
+sources/put/get_grid.s: sources/put/get_grid.c.s
+
+.PHONY : sources/put/get_grid.s
+
+# target to generate assembly for a file
+sources/put/get_grid.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/get_grid.c.s
+.PHONY : sources/put/get_grid.c.s
+
+sources/put/put.o: sources/put/put.c.o
+
+.PHONY : sources/put/put.o
+
+# target to build an object file
+sources/put/put.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put.c.o
+.PHONY : sources/put/put.c.o
+
+sources/put/put.i: sources/put/put.c.i
+
+.PHONY : sources/put/put.i
+
+# target to preprocess a source file
+sources/put/put.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put.c.i
+.PHONY : sources/put/put.c.i
+
+sources/put/put.s: sources/put/put.c.s
+
+.PHONY : sources/put/put.s
+
+# target to generate assembly for a file
+sources/put/put.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put.c.s
+.PHONY : sources/put/put.c.s
+
+sources/put/put_detailed_list.o: sources/put/put_detailed_list.c.o
+
+.PHONY : sources/put/put_detailed_list.o
+
+# target to build an object file
+sources/put/put_detailed_list.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_detailed_list.c.o
+.PHONY : sources/put/put_detailed_list.c.o
+
+sources/put/put_detailed_list.i: sources/put/put_detailed_list.c.i
+
+.PHONY : sources/put/put_detailed_list.i
+
+# target to preprocess a source file
+sources/put/put_detailed_list.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_detailed_list.c.i
+.PHONY : sources/put/put_detailed_list.c.i
+
+sources/put/put_detailed_list.s: sources/put/put_detailed_list.c.s
+
+.PHONY : sources/put/put_detailed_list.s
+
+# target to generate assembly for a file
+sources/put/put_detailed_list.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_detailed_list.c.s
+.PHONY : sources/put/put_detailed_list.c.s
+
+sources/put/put_input_name.o: sources/put/put_input_name.c.o
+
+.PHONY : sources/put/put_input_name.o
+
+# target to build an object file
+sources/put/put_input_name.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_input_name.c.o
+.PHONY : sources/put/put_input_name.c.o
+
+sources/put/put_input_name.i: sources/put/put_input_name.c.i
+
+.PHONY : sources/put/put_input_name.i
+
+# target to preprocess a source file
+sources/put/put_input_name.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_input_name.c.i
+.PHONY : sources/put/put_input_name.c.i
+
+sources/put/put_input_name.s: sources/put/put_input_name.c.s
+
+.PHONY : sources/put/put_input_name.s
+
+# target to generate assembly for a file
+sources/put/put_input_name.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_input_name.c.s
+.PHONY : sources/put/put_input_name.c.s
+
+sources/put/put_list.o: sources/put/put_list.c.o
+
+.PHONY : sources/put/put_list.o
+
+# target to build an object file
+sources/put/put_list.c.o:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_list.c.o
+.PHONY : sources/put/put_list.c.o
+
+sources/put/put_list.i: sources/put/put_list.c.i
+
+.PHONY : sources/put/put_list.i
+
+# target to preprocess a source file
+sources/put/put_list.c.i:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_list.c.i
+.PHONY : sources/put/put_list.c.i
+
+sources/put/put_list.s: sources/put/put_list.c.s
+
+.PHONY : sources/put/put_list.s
+
+# target to generate assembly for a file
+sources/put/put_list.c.s:
+	$(MAKE) -f CMakeFiles/my_ft_ls.dir/build.make CMakeFiles/my_ft_ls.dir/sources/put/put_list.c.s
+.PHONY : sources/put/put_list.c.s
 
 # Help Target
 help:
@@ -212,16 +806,82 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ft_ls_c"
-	@echo "... tt/main.o"
-	@echo "... tt/main.i"
-	@echo "... tt/main.s"
-	@echo "... tt/reading_directories.o"
-	@echo "... tt/reading_directories.i"
-	@echo "... tt/reading_directories.s"
-	@echo "... tt/sorting.o"
-	@echo "... tt/sorting.i"
-	@echo "... tt/sorting.s"
+	@echo "... my_ft_ls"
+	@echo "... sources/free/free.o"
+	@echo "... sources/free/free.i"
+	@echo "... sources/free/free.s"
+	@echo "... sources/log/ls_log.o"
+	@echo "... sources/log/ls_log.i"
+	@echo "... sources/log/ls_log.s"
+	@echo "... sources/main.o"
+	@echo "... sources/main.i"
+	@echo "... sources/main.s"
+	@echo "... sources/miscellaneous/ft_strchr_index.o"
+	@echo "... sources/miscellaneous/ft_strchr_index.i"
+	@echo "... sources/miscellaneous/ft_strchr_index.s"
+	@echo "... sources/miscellaneous/get_fpath.o"
+	@echo "... sources/miscellaneous/get_fpath.i"
+	@echo "... sources/miscellaneous/get_fpath.s"
+	@echo "... sources/miscellaneous/get_integer_length.o"
+	@echo "... sources/miscellaneous/get_integer_length.i"
+	@echo "... sources/miscellaneous/get_integer_length.s"
+	@echo "... sources/miscellaneous/get_max_name.o"
+	@echo "... sources/miscellaneous/get_max_name.i"
+	@echo "... sources/miscellaneous/get_max_name.s"
+	@echo "... sources/miscellaneous/sorting.o"
+	@echo "... sources/miscellaneous/sorting.i"
+	@echo "... sources/miscellaneous/sorting.s"
+	@echo "... sources/parsing/parsing_directory.o"
+	@echo "... sources/parsing/parsing_directory.i"
+	@echo "... sources/parsing/parsing_directory.s"
+	@echo "... sources/parsing/parsing_entry.o"
+	@echo "... sources/parsing/parsing_entry.i"
+	@echo "... sources/parsing/parsing_entry.s"
+	@echo "... sources/parsing/parsing_input.o"
+	@echo "... sources/parsing/parsing_input.i"
+	@echo "... sources/parsing/parsing_input.s"
+	@echo "... sources/parsing/parsing_options.o"
+	@echo "... sources/parsing/parsing_options.i"
+	@echo "... sources/parsing/parsing_options.s"
+	@echo "... sources/put/detailed_item/put_blocks.o"
+	@echo "... sources/put/detailed_item/put_blocks.i"
+	@echo "... sources/put/detailed_item/put_blocks.s"
+	@echo "... sources/put/detailed_item/put_fname.o"
+	@echo "... sources/put/detailed_item/put_fname.i"
+	@echo "... sources/put/detailed_item/put_fname.s"
+	@echo "... sources/put/detailed_item/put_group_name.o"
+	@echo "... sources/put/detailed_item/put_group_name.i"
+	@echo "... sources/put/detailed_item/put_group_name.s"
+	@echo "... sources/put/detailed_item/put_link.o"
+	@echo "... sources/put/detailed_item/put_link.i"
+	@echo "... sources/put/detailed_item/put_link.s"
+	@echo "... sources/put/detailed_item/put_protection.o"
+	@echo "... sources/put/detailed_item/put_protection.i"
+	@echo "... sources/put/detailed_item/put_protection.s"
+	@echo "... sources/put/detailed_item/put_size.o"
+	@echo "... sources/put/detailed_item/put_size.i"
+	@echo "... sources/put/detailed_item/put_size.s"
+	@echo "... sources/put/detailed_item/put_time.o"
+	@echo "... sources/put/detailed_item/put_time.i"
+	@echo "... sources/put/detailed_item/put_time.s"
+	@echo "... sources/put/detailed_item/put_user_name.o"
+	@echo "... sources/put/detailed_item/put_user_name.i"
+	@echo "... sources/put/detailed_item/put_user_name.s"
+	@echo "... sources/put/get_grid.o"
+	@echo "... sources/put/get_grid.i"
+	@echo "... sources/put/get_grid.s"
+	@echo "... sources/put/put.o"
+	@echo "... sources/put/put.i"
+	@echo "... sources/put/put.s"
+	@echo "... sources/put/put_detailed_list.o"
+	@echo "... sources/put/put_detailed_list.i"
+	@echo "... sources/put/put_detailed_list.s"
+	@echo "... sources/put/put_input_name.o"
+	@echo "... sources/put/put_input_name.i"
+	@echo "... sources/put/put_input_name.s"
+	@echo "... sources/put/put_list.o"
+	@echo "... sources/put/put_list.i"
+	@echo "... sources/put/put_list.s"
 .PHONY : help
 
 
