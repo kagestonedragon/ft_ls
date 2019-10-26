@@ -1,4 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   put_input_name.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: emedea <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/28 13:31:40 by emedea            #+#    #+#             */
+/*   Updated: 2019/09/28 13:46:27 by emedea           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_ls.h"
+
+int			put_total(uint16_t options, int total)
+{
+	if (options & OPTION_S)
+	{
+		write(1, "total ", 6);
+		ft_putnbr(total);
+		write(1, "\n", 1);
+	}
+	return (0);
+}
 
 static int	put_detailed_input_name(t_ls *ls, uint16_t *options, int level)
 {
@@ -11,7 +34,7 @@ static int	put_detailed_input_name(t_ls *ls, uint16_t *options, int level)
 	return (0);
 }
 
-int 		put_input_name(t_ls *ls, uint16_t *options, int level)
+int			put_input_name(t_ls *ls, uint16_t *options, int level)
 {
 	if ((*options & OPTION_INPUT) && level == 1)
 		return (0);
@@ -19,7 +42,8 @@ int 		put_input_name(t_ls *ls, uint16_t *options, int level)
 	{
 		if ((*options & OPTION_NAME))
 			write(1, "\n", 1);
-		(*options & OPTION_L) ? put_detailed_input_name(ls, options, level) : ft_putstr(ls->name);
+		(*options & OPTION_L) ?
+			put_detailed_input_name(ls, options, level) : ft_putstr(ls->name);
 		*options |= OPTION_NAME;
 		write(1, "\n", 1);
 	}

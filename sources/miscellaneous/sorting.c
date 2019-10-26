@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sorting.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: emedea <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/28 13:20:38 by emedea            #+#    #+#             */
+/*   Updated: 2019/09/28 13:21:13 by emedea           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_ls.h"
 
 static t_ls		*swap(t_ls *ls1, t_ls *ls2)
@@ -66,7 +78,7 @@ static t_ls		*sorting_reverse(t_ls *ls)
 	return (previous);
 }
 
-int 			sorting(t_ls **ls, int options)
+int				sorting(t_ls **ls, int options)
 {
 	*ls = sorting_ascii(*ls);
 	if (options & OPTION_T)

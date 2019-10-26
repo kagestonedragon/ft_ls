@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_fpath.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: emedea <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/28 13:19:22 by emedea            #+#    #+#             */
+/*   Updated: 2019/09/28 13:19:36 by emedea           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_ls.h"
 
-int 		get_fpath(char fpath[PATH_MAX], char path[PATH_MAX], char *name)
+int			get_fpath(char fpath[PATH_MAX], char path[PATH_MAX], char *name)
 {
-	int 	i;
+	int		i;
 
 	i = -1;
 	while (path[++i])

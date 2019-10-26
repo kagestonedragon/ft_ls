@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   put_protection.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: emedea <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/28 13:25:43 by emedea            #+#    #+#             */
+/*   Updated: 2019/09/28 16:01:39 by emedea           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_ls.h"
 
 static int	get_file_type(int mode)
@@ -22,9 +34,8 @@ static int	get_file_type(int mode)
 static int	get_acl(char fpath[PATH_MAX])
 {
 	acl_t	temporary;
-	char 	buffer[10];
 
-	if (listxattr(fpath, buffer, sizeof(buffer), XATTR_NOFOLLOW))
+	if (listxattr(fpath, NULL, 0, XATTR_NOFOLLOW) > 0)
 		return ('@');
 	else if ((temporary = acl_get_link_np(fpath, ACL_TYPE_EXTENDED)))
 	{
@@ -34,9 +45,9 @@ static int	get_acl(char fpath[PATH_MAX])
 	return (' ');
 }
 
-int 		put_protection(int mode, char fpath[PATH_MAX])
+int			put_protection(int mode, char fpath[PATH_MAX])
 {
-	char 	protection[12];
+	char	protection[12];
 
 	protection[0] = get_file_type(mode);
 	protection[1] = (S_IRUSR & mode) ? 'r' : '-';

@@ -1,3 +1,0 @@
-/Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kagestonedragon/my_ft_ls/cmake-build-debug/CMakeFiles/my_ft_ls.dir
